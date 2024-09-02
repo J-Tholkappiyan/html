@@ -1,0 +1,29 @@
+/* There are three types 
+1. inline css   | inside the tag |
+2. Internal css | inside the style tag |
+3. External css | Write in the external file, it ends with .css extension |
+ 
+we can write the internal and external css for the element in three ways
+1. class use .
+2. id    use #
+3. tag   use tag name
+*/
+h3{
+    color: hsla(201, 99%, 46%, 0.938);
+}
+
+#div2{
+    text-align: left;
+}
+.css-color{
+    text-wrap: balance;
+    color: orange ;
+}
+/* Next concept details for design
+column bg-color:Green
+column head color:white
+font-family:your choice;
+body bg-color:gray
+content color:black;
+font-family:your choice;
+*/

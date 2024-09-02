@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRANSACTION-ENTRY</title>
+</head>
+<body>
+    <style>
+        .flex-container{
+            display: flex;
+            background-color: rgb(249, 249, 249);
+            justify-content: space-between;
+        
+        }
+        .col{
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+        @media only screen and (max-width:426px)
+        {
+            .col-sm{
+                display: grid;
+            grid-template-columns: auto;
+            justify-content: left;
+            }   
+        }
+        @media only screen and (max-width:426px)
+        { 
+            .flex-sm{
+                display: flex;
+                justify-content: space-evenly;
+                text-wrap: balance;
+                font-size: medium;
+            }
+            
+        }
+        .text{
+            color: rgb(7, 7, 101);
+        }
+        .conn{
+                width: fit-content;
+                padding: 15px;
+        }
+        div {
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                margin-top: 15px;
+                margin-bottom: 15px;
+        }
+        body {
+                font-family: 'Times New Roman', Times, serif;
+                background-color: white;
+                font-size: 18pt;
+        }
+        
+        input {
+                font-size: 10pt;
+        }
+        button {
+                font-size: 18pt;
+        }
+        .font2{
+             color: blue;
+           }
+        #submitbtn {
+         border: 2px solid blue;
+        }
+
+        #submitbtn:hover {
+            background-color: blue;
+            color: white;
+        }
+
+        #cancelbtn {
+            float: right;
+            border: 2px solid blue;
+        }
+
+        #cancelbtn:hover {
+            background-color: blue;
+            color: white;
+        }
+        .sti {
+        position: sticky;
+        top: 10px;
+        background-color: rgb(255, 255, 255);
+        }
+    </style>
+        <div class="flex-container text flex-sm">
+        <img src="/images/why-sbi-billion-loan-adani-doesn-make-sense-5.png" width="100px" height="100px" class="logo-design">        
+        <div style="font-family: 'Times New Roman', Times, serif; font-size: x-large; " class="header" ><h2>STATE BANK OF INDIA</h2></div>
+        <img src="/images/why-sbi-billion-loan-adani-doesn-make-sense-5.png" width="100px" height="100px" class="logo-design1">
+        </div>    
+        <div>
+        <form class="conn font2">
+            <div class="sti">
+                <h3 class="text">TRANSACTION-ENTRY</h3>
+            </div>
+            <div class="col col-sm">
+                <div>
+                    <label for="Transaction ID">Transaction ID:</label>
+                    <input type="number" id="Nametxt" name="Transaction ID" placeholder="674373">
+                </div>
+                <div>
+                    <label  for="Cus ID">Cus ID:</label>
+                    <input type="number" id="Cus ID" name="Cus Id" placeholder="8978789">
+                </div>
+                <div>
+                    <label for="Customer Name">Customer Name:</label>
+                    <input type="text" id="Customer Name" name="Customer Name" placeholder="Tholkapiyan.J">
+                </div>
+                <div>
+                    <label for="mobileno">Moblie Number:</label>
+                    <input type="number" id="mobileno" name="mobileno" placeholder="+91 9894292498" >
+                </div>
+                <div>
+                    <label for="Nametxt">Date:</label>
+                    <input type="date" id="Nametxt" name="Date" placeholder="Date" >
+                </div>
+                <div>
+                    <label  for="Transaction Mode">Transaction Mode:</label>
+                    <input type="text" id="Transaction Mode" name="Transaction Mode" placeholder="Tablet/PC">
+                </div>
+                <div>
+                    <label  for="Amount">Amount:</label>
+                    <input type="number" id="Amount" name="Amount" placeholder="Rs.10000/-">
+                </div>
+                <div>
+                    <label  for="Details">Details:</label>
+                    <input type="text" id="Details" name="Details" placeholder="Swamimalai">
+                </div>
+                <div>
+                    <label  for="Remarks">Remarks:</label>
+                    <input type="text" id="Remarks" name="Remarks" placeholder="Good/Bad">
+                </div>
+                <div>
+                    <label  for="Payment Mode">Payment Mode</label>
+                    <input type="text" id="Payment Mode" name="Payment Mode" placeholder="Cash/Cheque">
+                </div>
+                <div>
+                    <label  for="Account Number">Account Number:</label>
+                    <input type="number" id="Account Number" name="Account Number" placeholder="0063098979382832">
+                </div><br>
+                <div>
+                        <button type="submit" id="submitbtn">REGISTER</button>
+                </div>
+                <div> <button type="reset" id="cancelbtn">CANCEL</button></div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
